@@ -38,16 +38,16 @@ function GrandPrize() {
         </Link>
         </div>
       <div className="grandPrize">
-        <img src="/images/main_1.gif" className="grandprize-image" alt="" />
+        <img src="/bayers/bg/first_bg_1.gif" className="grandprize-image" alt="" />
       </div>
       <div className="grandprize-down-portion">
-         <img className="grand-down-image" src="/images/main_2.gif" alt="" />
+         <img className="grand-down-image" src="/bayers/bg/first_bg_2.png" alt="" />
       <div className="items-container">
         {isCardVisible && (
           <div className="grand-page-card-container">
             <div className="card" onClick={handleCardClick}>
               <div className="card-image-container">
-                <img src="1.gif" className="card-image" alt="" />
+                <img src="/bayers/cards/1st.gif" className="card-image" alt="" />
               </div>
             </div>
           </div>
@@ -67,7 +67,7 @@ function GrandPrize() {
         {
             revealPrize && (
                 <div className={`transition-element ${isShowing ? 'show' : ''}`} onClick={handleAnnounceImage}>
-                    <img src="/images/third_step_image.gif" className="announce-prize-image" alt="grand-prize-announcement" />
+                    <img src="/bayers/winners/winner_selected.gif" className="announce-prize-image" alt="grand-prize-announcement" />
 
                     </div>
             )
@@ -76,7 +76,7 @@ function GrandPrize() {
         {
             showWinners && (
                 <div className={` ${isShowing ? 'show' : ''}`} >
-                     <img src="grandprizeWinners.gif" className="grand-winners-image" alt="grand-prize-announcement" />
+                     <img src="/bayers/winners/winners_list_posters.gif" className="grand-winners-image" alt="grand-prize-announcement" />
                 </div>
             )
 

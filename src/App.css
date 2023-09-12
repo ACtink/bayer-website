@@ -421,7 +421,7 @@
   position: absolute;
   height: 80px;
   width: 350px;
-  top: 36px;
+  top: 30px;
   left: 175px;
   display: flex;
   justify-content: flex-start;
@@ -449,14 +449,14 @@
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  background-image: linear-gradient(45deg, #cca8a8, #d0ac88, #655c6f, #cccbd9, #4a4a89, #b082d4);
+  background-image: linear-gradient(45deg, #7a4141, #f6ae66, #b692df, #cccbd9, #0d0d18, #b082d4);
 
   transition: background-color 0.3s, transform 0.3s;
 }
 
 /* Hover effect */
 .medium-home-button:hover {
-  background-image: linear-gradient(45deg, #ff6b6b, #3e625e);
+  background-image: linear-gradient(45deg, #462323, #fdff80);
 }
 
 /* Active effect */
