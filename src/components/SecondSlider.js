@@ -12,9 +12,9 @@ const rightArrowStyles = {
   position: "absolute",
   top: "50%",
   transform: "translate(0, -50%)",
-  right: "16px",
+  right: "3px",
   fontSize: "70px",
-  color: "#f579",
+  color: "#9299",
   zIndex: 1,
   cursor: "pointer",
 };
@@ -23,9 +23,9 @@ const leftArrowStyles = {
   position: "absolute",
   top: "50%",
   transform: "translate(0, -50%)",
-  left: "16px",
+  left: "3px",
   fontSize: "70px",
-  color: "#f579",
+  color: "#9299",
   zIndex: 1,
   cursor: "pointer",
 };
@@ -48,7 +48,7 @@ const dotStyle = {
   color: "red"
 };
 
-const Slider = ({ slides }) => {
+const SecondSlider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0;
@@ -64,7 +64,7 @@ const Slider = ({ slides }) => {
     setCurrentIndex(slideIndex);
   };
   const slideStylesWidthBackground = {
-   
+    ...slideStyles,
     backgroundImage: `url("${slides[currentIndex].url}")`,
   };
 
@@ -72,7 +72,7 @@ const Slider = ({ slides }) => {
   console.log(`${slides[currentIndex].url}`)
 
   return (
-    <div className="slides-div">
+    <div style={sliderStyles}>
       <div>
         <div onClick={goToPrevious} style={leftArrowStyles}>
           ❰
@@ -81,7 +81,7 @@ const Slider = ({ slides }) => {
           ❱
         </div>
       </div>
-      <div className="slides" style={slideStylesWidthBackground}></div>
+      <div style={slideStylesWidthBackground}></div>
       <div style={dotsContainerStyles}>
         {slides.map((slide, slideIndex) => (
           <div
@@ -97,4 +97,4 @@ const Slider = ({ slides }) => {
   );
 };
 
-export default Slider;
+export default SecondSlider;

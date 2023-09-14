@@ -4,14 +4,28 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Spinner from "./Spinner";
 import SliderContainer from "./SliderContainer";
+import Modal from "./Modal";
 
 function FirstPrize() {
   const [isCardVisible, setIsCardVisible] = useState(true);
 
   const [isSpinnerVisible, setIsSpinnerVisible] = useState(false);
   const [revealPrize , setRevealPrize] = useState(false);
-  const [showWinners , setShowWinners] = useState(false);
+  const [showFirstWinners , setShowFirstWinners] = useState(false);
   const [isShowing, setIsShowing] = useState(false);
+
+
+
+
+  const [showModal , setShowModal] = useState(false)
+
+  const toggleModal =()=>{
+    setShowModal(!showModal)
+    setRevealPrize(!revealPrize)
+  }
+
+
+  const winnersList =[{ url: "/winners/2nd.gif", title: "beach" }]
 
 
   const toggleElement = () => {
@@ -26,7 +40,8 @@ function FirstPrize() {
 
   const handleAnnounceImage = ()=>{
     setRevealPrize(false)
-    setShowWinners(true)
+    setShowFirstWinners(true)
+    console.log(showFirstWinners  + " this is in firstpage ")
     setIsShowing(true)
    
     
@@ -76,19 +91,38 @@ function FirstPrize() {
             )
         }
 
-        {/* {
-            showWinners && (
+        {
+            showFirstWinners && (
                 <div className={`transition-element ${isShowing ? 'show' : ''}`} >
-                     <img src="grandprizeWinners.gif" className="grand-winners-image" alt="grand-prize-announcement" />
+                     <img src="/winners/2nd.gif" className="grand-winners-image" alt="grand-prize-announcement" />
                 </div>
             )
 
-        } */}{
-            showWinners && (<SliderContainer/>)
         }
 
+       
+        {/* {
+            showWinners && (<SliderContainer/>)
+        } */}
+
+
+
+
+
+
+
       </div>
+    
       </div>
+
+      {console.log(showFirstWinners + "jejejejjej")}
+       {/* {showFirstWinners && (
+          
+          
+            <Modal showModal={showModal} setShowModal={setShowModal} toggleModal={toggleModal} winnersList={winnersList} revealPrize={revealPrize} setRevealPrize={setRevealPrize} />
+          )} */}
+      
+      
     </div>
   );
 }

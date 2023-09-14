@@ -72,7 +72,7 @@ function Home() {
             </button></Link> */}
           </div>
           </Link>
-          <Link to="/sixthprize" className="button-link">
+          <Link to="/" className="button-link">
           <div className="card">
             <div className="card-image-container">
             <img src="/bayers/cards/6th.gif" className=" card-image" alt="" />

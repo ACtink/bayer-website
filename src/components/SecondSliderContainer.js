@@ -1,8 +1,10 @@
+import SecondSlider from "./SecondSlider";
 import Slider from "./Slider";
-const SliderContainer = (props) => {
+const SecondSliderContainer = (props) => {
   let slides={}
   const winnersToShow  = props.winnersList
-  if(winnersToShow.length!==0){
+  console.log(winnersToShow)
+  if(winnersToShow){
      slides = [
       // { url: "requirements/winners/first-winner-names-1.gif", title: "beach" },
       // { url: "requirements/winners/first-winner-names-2.gif", title: "boat" },
@@ -23,23 +25,22 @@ const SliderContainer = (props) => {
       ];
       
     }
-  // const containerStyles = {
-  //   // width: "500px",
-  //   // height: "500px",
-  //   marginTop:"30px",
-  //   minWidth: "80vw",
-  //   minHeight: "60vh"
-    
-   
-  // };
+
+  
+ 
+  const containerStyles = {
+    width: "570px",
+    height: "350px",
+    margin: "63px auto"
+  };
   return (
     <div>
     
-      <div className="slider-container" >
-        <Slider slides={slides} />
+      <div style={containerStyles}>
+        <SecondSlider slides={slides} />
       </div>
     </div>
   );
 };
 
-export default SliderContainer 
+export default SecondSliderContainer 

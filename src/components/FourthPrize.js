@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Spinner from "./Spinner";
 import SliderContainer from "./SliderContainer";
+import SecondSliderContainer from "./SecondSliderContainer";
 
 function FourthPrize() {
   const [isCardVisible, setIsCardVisible] = useState(true);
@@ -32,6 +33,12 @@ function FourthPrize() {
     
 
   }
+
+
+  const winnersList =[{ url: "/winners/5th_1.gif", title: "beachdddff" },
+  { url: "/winners/5th_2.gif", title: "beachhhhddee" },
+  { url: "/winners/5th_3.gif", title: "beachhhhddeefg" },
+  { url: "/winners/5th_4.gif", title: "beachhhhddeedd" }]
 
   return (
     <div className="grandpage">
@@ -86,7 +93,7 @@ function FourthPrize() {
         } */}
 
 {
-            showWinners && (<SliderContainer/>)
+            showWinners && (<SecondSliderContainer winnersList={winnersList}/>)
         }
 
       </div>
