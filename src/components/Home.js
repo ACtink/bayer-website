@@ -20,7 +20,7 @@ function Home() {
       <div className="card-container">
 
       <img className="home-down-image" src="/bayers/bg/home_bg_2.png" alt="" />
-      <Link to="/grandprize" className="button-link">
+      <Link to="/firstprize" className="button-link">
         <div className="card">
           <div className="card-image-container">
             <img src="/bayers/cards/1st.gif"  className="card-image" alt="" />
@@ -30,7 +30,7 @@ function Home() {
           </button></Link>  */}
           
         </div></Link> 
-        <Link to="/firstprize" className="button-link">
+        <Link to="/secondprize" className="button-link">
         <div className="card">
           <div className="card-image-container">
           <img src="/bayers/cards/2nd.gif" className="card-image" alt="" />
@@ -40,7 +40,7 @@ function Home() {
           </button></Link> */}
         </div>
         </Link> 
-        <Link to="/secondprize" className="button-link">
+        <Link to="/thirdprize" className="button-link">
         <div className="card">
           <div className="card-image-container">
           <img src="/bayers/cards/3rd.gif" className="card-image" alt="" />
@@ -51,7 +51,7 @@ function Home() {
           </button></Link> */}
         </div>
         </Link>
-        <Link to="/thirdprize" className="button-link">
+        <Link to="/fourthprize" className="button-link">
         <div className="card">
           <div className="card-image-container">
           <img src="/bayers/cards/4th.gif" className=" card-image" alt="" />
@@ -62,7 +62,7 @@ function Home() {
         </div>
         </Link>
         {/* <div className="inner-container"> */}
-        <Link to="/fourthprize" className="button-link">
+        <Link to="/fifthprize" className="button-link">
           <div className="card">
             <div className="card-image-container">
             <img src="/bayers/cards/5th.gif" className="card-image" alt="" />
@@ -72,7 +72,7 @@ function Home() {
             </button></Link> */}
           </div>
           </Link>
-          <Link to="/fifthprize" className="button-link">
+          <Link to="/sixthprize" className="button-link">
           <div className="card">
             <div className="card-image-container">
             <img src="/bayers/cards/6th.gif" className=" card-image" alt="" />

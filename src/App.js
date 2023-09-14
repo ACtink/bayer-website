@@ -17,12 +17,12 @@ function App() {
       <Routes>
         <Route path="/">
           <Route path="/" element={<Home />} />
-          <Route path="/grandprize" element={<GrandPrize />} />
-          <Route path="/firstprize" element={<FirstPrize/>}/>
-          <Route path="/secondprize" element={<SecondPrize/>}/>
-          <Route path="/thirdprize" element={<ThirdPrize/>}/>
-          <Route path="/fourthprize" element={<FourthPrize/>}/>
-          <Route path="/fifthprize" element={<FifthPrize/>}/>
+          <Route path="/firstprize" element={<GrandPrize />} />
+          <Route path="/secondprize" element={<FirstPrize/>}/>
+          <Route path="/thirdprize" element={<SecondPrize/>}/>
+          <Route path="/fourthprize" element={<ThirdPrize/>}/>
+          <Route path="/fifthprize" element={<FourthPrize/>}/>
+          <Route path="/sixthprize" element={<FifthPrize/>}/>
           <Route  path="cara" element={<CarouselC/>} />
           <Route path="/*" element={<YetToImplement/>}/>
 

@@ -471,3 +471,9 @@
   max-height: 100vh;
   width: 100%;
 }
+
+.overlay{
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #0d0d18;
+}
