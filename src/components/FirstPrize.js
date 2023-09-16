@@ -40,11 +40,10 @@ function FirstPrize() {
 
   const handleAnnounceImage = ()=>{
     setRevealPrize(false)
-    setShowFirstWinners(true)
-    console.log(showFirstWinners  + " this is in firstpage ")
+    setShowFirstWinners(true); 
+
     setIsShowing(true)
-   
-    
+    setShowModal(!showModal)
 
   }
 
@@ -91,14 +90,14 @@ function FirstPrize() {
             )
         }
 
-        {
+        {/* {
             showFirstWinners && (
                 <div className={`transition-element ${isShowing ? 'show' : ''}`} >
                      <img src="/winners/2nd.gif" className="grand-winners-image" alt="grand-prize-announcement" />
                 </div>
             )
 
-        }
+        } */}
 
        
         {/* {
@@ -115,12 +114,12 @@ function FirstPrize() {
     
       </div>
 
-      {console.log(showFirstWinners + "jejejejjej")}
-       {/* {showFirstWinners && (
+      
+       {showFirstWinners && (
           
           
             <Modal showModal={showModal} setShowModal={setShowModal} toggleModal={toggleModal} winnersList={winnersList} revealPrize={revealPrize} setRevealPrize={setRevealPrize} />
-          )} */}
+          )}
       
       
     </div>

@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import Spinner from "./Spinner";
 import SliderContainer from "./SliderContainer";
 import SecondSliderContainer from "./SecondSliderContainer";
+import Modal from "./Modal";
 
 function ThirdPrize() {
   const [isCardVisible, setIsCardVisible] = useState(true);
@@ -20,6 +21,15 @@ function ThirdPrize() {
   };
 
 
+  const [showModal , setShowModal] = useState(false)
+
+  const toggleModal =()=>{
+    setShowModal(!showModal)
+    setRevealPrize(!revealPrize)
+  }
+
+
+
   const handleCardClick = () => {
     setIsCardVisible(false);
     setIsSpinnerVisible(true);
@@ -29,6 +39,7 @@ function ThirdPrize() {
     setRevealPrize(false)
     setShowWinners(true)
     setIsShowing(true)
+    setShowModal(!showModal)
    
     
 
@@ -89,12 +100,17 @@ function ThirdPrize() {
             )
 
         } */}   
-        {
+        {/* {
             showWinners && (<SecondSliderContainer winnersList={winnersList}/>)
-        }
+        } */}
 
       </div>
       </div>
+      {showWinners && (
+          
+          
+          <Modal showModal={showModal} setShowModal={setShowModal} toggleModal={toggleModal} winnersList={winnersList} revealPrize={revealPrize} setRevealPrize={setRevealPrize} />
+        )}
     </div>
   );
 }
