@@ -57,16 +57,16 @@ function ThirdPrize() {
         </Link>
         </div>
       <div className="grandPrize">
-        <img src="/bayers/bg/fourth_bg_1.gif" className="grandprize-image" alt="" />
+        <img src="/bayers/bg/fourth_prize_1.gif" className="grandprize-image" alt="" />
       </div>
       <div className="grandprize-down-portion">
-         <img className="grand-down-image" src="/bayers/bg/fourth_bg_2.png" alt="" />
+         <img className="grand-down-image" src="/bayers/bg/fourth_prize_2.png" alt="" />
       <div className="items-container">
         {isCardVisible && (
           <div className="grand-page-card-container">
             <div className="card" onClick={handleCardClick}>
               <div className="card-image-container">
-                <img src="/bayers/cards/4th.gif" className="card-image" alt="" />
+                <img src="/bayers/cards/fourth_prize.gif" className="card-image" alt="" />
               </div>
             </div>
           </div>

@@ -46,7 +46,7 @@ function GrandPrize() {
       </div>
       <div className="grandPrize">
         <img
-          src="/bayers/bg/first_bg_1.gif"
+          src="/bayers/bg/first_prize_1.gif"
           className="grandprize-image"
           alt=""
         />
@@ -54,7 +54,7 @@ function GrandPrize() {
       <div className="grandprize-down-portion">
         <img
           className="grand-down-image"
-          src="/bayers/bg/first_bg_2.png"
+          src="/bayers/bg/first_prize_2.png"
           alt=""
         />
         <div className="items-container">
@@ -63,7 +63,7 @@ function GrandPrize() {
               <div className="card" onClick={handleCardClick}>
                 <div className="card-image-container">
                   <img
-                    src="/bayers/cards/1st.gif"
+                    src="/bayers/cards/first_prize.gif"
                     className="card-image"
                     alt=""
                   />
