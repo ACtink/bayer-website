@@ -43,6 +43,7 @@ function SecondPrize() {
     { url: "/winner_posters/third_prize/third_prize_2.gif", title: "beach" },
     { url: "/winner_posters/third_prize/third_prize_3.gif", title: "beach" },
     { url: "/winner_posters/third_prize/third_prize_4.gif", title: "beach" },
+    
   ];
 
   return (

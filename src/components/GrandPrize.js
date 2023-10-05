@@ -24,6 +24,7 @@ function GrandPrize() {
     { url: "/winner_posters/first_prize/first_prize_3.gif", title: "beach" },
     { url: "/winner_posters/first_prize/first_prize_4.gif", title: "beach" },
     { url: "/winner_posters/first_prize/first_prize_5.gif", title: "beach" },
+    { url: "/winner_posters/first_prize/first_prize_6.gif", title: "beach" },
   ];
 
   const toggleElement = () => {

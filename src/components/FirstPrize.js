@@ -24,6 +24,7 @@ function FirstPrize() {
     { url: "/winner_posters/second_prize/second_prize_2.gif", title: "beach" },
     { url: "/winner_posters/second_prize/second_prize_3.gif", title: "beach" },
     { url: "/winner_posters/second_prize/second_prize_4.gif", title: "beach" },
+    { url: "/winner_posters/second_prize/second_prize_5.gif", title: "beach" },
   ];
 
   const toggleElement = () => {
