@@ -90,12 +90,14 @@
 
 .card {
   width: 200px;
-  height: 300px;
+  height: 320px;
   background-color: #f0f0f0;
   border: 15px solid transparent; /* Initial transparent border */
   border-radius: 10px;
   position: relative;
   cursor: pointer;
+
+  
 
   overflow: hidden;
   border-radius: 10px;
@@ -157,10 +159,10 @@
   }
 }
 
-/* .card-image-container {
-  height: 400px;
-  width: 600px;
-} */
+.card-image-container {
+  
+  overflow: hidden;
+}
 
 .banner-image {
   height: 50vh;
@@ -171,6 +173,10 @@
   height: 100%;
   width: 100%;
   border-radius: 4% 4% 0 0;
+  background-size: cover; /* Scale the background image to cover the entire container */
+  background-position:top;
+
+  
 }
 
 /* button{
@@ -425,20 +431,22 @@
 .nav-buttons-container{
   position: absolute;
   height: 80px;
-  width: 350px;
-  top: 20px;
-  left: 175px;
+  width: 150px;
+  top: 30px;
+  left: 90px;
   display: flex;
   justify-content: flex-start;
   
 }
 .nav-buttons-container button{
-  height: 30px;
-  width: 90px;
+  height: 45px;
+  width: 130px;
   font-size: 23px;
   text-align: center;
   cursor: pointer;
-   font-family:Verdana, Geneva, Tahoma, sans-serif
+  padding: 5px;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   border: 3px solid rgb(242, 222, 73);
 }
 
  
@@ -457,11 +465,14 @@
   background-image: linear-gradient(45deg, #7a4141, #f6ae66, #b692df, #cccbd9, #0d0d18, #b082d4);
 
   transition: background-color 0.3s, transform 0.3s;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 /* Hover effect */
 .medium-home-button:hover {
-  background-image: linear-gradient(45deg, #462323, #fdff80);
+  background-image: linear-gradient(45deg, #462323, #80e3ff);
+  color: rgb(238, 233, 200);
+  
 }
 
 /* Active effect */
@@ -469,6 +480,9 @@
   transform: scale(0.95);
   color: #f6f2f2;
   font-weight: 900;
+ 
+  transform: translateY(5px); /* Shift the button down by 2 pixels */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 

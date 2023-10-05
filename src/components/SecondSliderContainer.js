@@ -31,7 +31,8 @@ const SecondSliderContainer = (props) => {
   const containerStyles = {
     width: "570px",
     height: "350px",
-    margin: "63px auto"
+    margin: "63px auto",
+    
   };
   return (
     <div>
