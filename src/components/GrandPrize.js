@@ -19,12 +19,12 @@ function GrandPrize() {
   };
 
   const winnersList = [
-    { url: "/winner_posters/first_prize/first_prize_1.gif", title: "beach" },
-    { url: "/winner_posters/first_prize/first_prize_2.gif", title: "beach" },
-    { url: "/winner_posters/first_prize/first_prize_3.gif", title: "beach" },
-    { url: "/winner_posters/first_prize/first_prize_4.gif", title: "beach" },
-    { url: "/winner_posters/first_prize/first_prize_5.gif", title: "beach" },
-    { url: "/winner_posters/first_prize/first_prize_6.gif", title: "beach" },
+    { url: "/bayers/winner_posters/1st_1.gif", title: "beach" },
+    { url: "/bayers/winner_posters/1st_2.gif", title: "beach" },
+    { url: "/bayers/winner_posters/1st_3.gif", title: "beach"},
+    { url: "/bayers/winner_posters/1st_4.gif", title: "beach" },
+    { url: "/bayers/winner_posters/1st_5.gif", title: "beach" },
+  
   ];
 
   const toggleElement = () => {

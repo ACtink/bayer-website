@@ -37,10 +37,10 @@ function ThirdPrize() {
   };
 
   const winnersList = [
-    { url: "/winner_posters/fourth_prize/fourth_prize_1.gif", title: "beach" },
-    { url: "/winner_posters/fourth_prize/fourth_prize_2.gif", title: "beach" },
-    { url: "/winner_posters/fourth_prize/fourth_prize_3.gif", title: "beach" },
-    { url: "/winner_posters/fourth_prize/fourth_prize_4.gif", title: "beach" },
+    { url: "/bayers/winner_posters/4th_1.gif", title: "beach" },
+    { url: "/bayers/winner_posters/4th_2.gif", title: "beach" },
+    { url: "/bayers/winner_posters/4th_3.gif", title: "beach" },
+    { url: "/bayers/winner_posters/4th_4.gif", title: "beach" },
   ];
 
   return (

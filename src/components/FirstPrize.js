@@ -20,11 +20,10 @@ function FirstPrize() {
   };
 
   const winnersList = [
-    { url: "/winner_posters/second_prize/second_prize_1.gif", title: "beach" },
-    { url: "/winner_posters/second_prize/second_prize_2.gif", title: "beach" },
-    { url: "/winner_posters/second_prize/second_prize_3.gif", title: "beach" },
-    { url: "/winner_posters/second_prize/second_prize_4.gif", title: "beach" },
-    { url: "/winner_posters/second_prize/second_prize_5.gif", title: "beach" },
+    { url: "/bayers/winner_posters/2nd_1.gif", title: "beach"},
+    { url: "/bayers/winner_posters/2nd_2.gif", title: "beach" },
+    { url: "/bayers/winner_posters/2nd_3.gif", title: "beach" },
+    { url: "/bayers/winner_posters/2nd_4.gif", title: "beach" },
   ];
 
   const toggleElement = () => {

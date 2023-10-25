@@ -39,10 +39,10 @@ function SecondPrize() {
   };
 
   const winnersList = [
-    { url: "/winner_posters/third_prize/third_prize_1.gif", title: "beach" },
-    { url: "/winner_posters/third_prize/third_prize_2.gif", title: "beach" },
-    { url: "/winner_posters/third_prize/third_prize_3.gif", title: "beach" },
-    { url: "/winner_posters/third_prize/third_prize_4.gif", title: "beach" },
+    { url: "/bayers/winner_posters/3rd_1.gif", title: "beach" },
+    { url: "/bayers/winner_posters/3rd_2.gif", title: "beach"},
+    { url: "/bayers/winner_posters/3rd_3.gif", title: "beach" },
+    { url: "/bayers/winner_posters/3rd_4.gif", title: "beach" },
     
   ];
 
