@@ -33,12 +33,12 @@ const SliderContainer = (props) => {
    
   // };
   return (
-    <div>
+   
     
       <div className="slider-container" >
         <Slider slides={slides} />
       </div>
-    </div>
+   
   );
 };
 

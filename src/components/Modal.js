@@ -10,8 +10,12 @@ function Modal({ showModal, setShowModal, toggleModal , winnersList }) {
 
           <div className="container-modal">
             <SliderContainer winnersList={winnersList} />
-            
+
+            <div className="modal-button-container">
             <button className="modal-close-button" onClick={toggleModal}>Close</button>
+            </div>
+            
+          
           </div>
         </div>
       )}

@@ -12,22 +12,24 @@ const rightArrowStyles = {
   position: "absolute",
   top: "50%",
   transform: "translate(0, -50%)",
-  right: "16px",
+  right: "180px",
   fontSize: "70px",
-  color: "#f579",
+  color: "#FFFF50",
   zIndex: 1,
   cursor: "pointer",
+  userSelect: "none"
 };
 
 const leftArrowStyles = {
   position: "absolute",
   top: "50%",
   transform: "translate(0, -50%)",
-  left: "16px",
+  left: "180px",
   fontSize: "70px",
-  color: "#f579",
+  color: "#FFFF50",
   zIndex: 1,
   cursor: "pointer",
+  userSelect: "none"
 };
 
 const sliderStyles = {
